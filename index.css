@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  width: 100vw;
+  height: 80px;
+  padding: 10px 20px;
+  background-color: rgb(29, 29, 29);
+  color: #ec4646;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header h1 span {
+  color: white;
+  margin-right: 8px;
+}
+
+.header > div a {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+
+.header > div a:hover {
+  transition-duration: 200ms;
+  color: #ec4646;
+}
+
+.main {
+  min-height: calc(100vh);
+  width: 100vw;
+  background-color: rgb(29, 29, 29);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main h1 {
+  color: #b85141;
+  font-size: 70px;
+  transition-duration: 200ms;
+  cursor: default;
+}
+
+.main h1:hover {
+  color: white;
+  transition-duration: 200ms;
+}
+
+.main p {
+  color: rgb(201, 201, 201);
+}
+
+.main p span {
+  color: #ec4646;
+}
+
+.family {
+  margin-top: 70px;
+  display: flex;
+  position: relative;
+}
+
+.family > div {
+  width: 200px;
+  height: 300px;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 50px;
+  position: relative;
+  border: 10px solid #a53f3f;
+  transition-duration: 400ms;
+  cursor: default;
+}
+
+.family > div:first-of-type {
+  background-image: url('./index.jpeg');
+  background-position: left;
+  top: -20px;
+}
+.family div:nth-of-type(2) {
+  background-image: url('./images\ \(1\).jpeg');
+  top: 30px;
+}
+.family div:nth-of-type(3) {
+  background-image: url('./images.jpeg');
+  top: -20px;
+}
+.family div:nth-of-type(4) {
+  background-image: url('./download.jpeg');
+  top: 30px;
+}
+
+.family div:hover {
+  top: 0;
+  border: none;
+  transition-duration: 400ms;
+  border: 10px solid #ff0000;
+}
